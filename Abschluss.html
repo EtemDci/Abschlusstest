@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../Übungen2/Hintergrund2.jpeg);
+    background-color: rgb(42, 32, 65);
+    font-family: serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+.naviinhalt
+{
+    text-align: center;
+    padding: 5px;
+    border:green;
+    size: 16px;
+}
+
+
+
+.naviinhalt:hover{ 
+    color: darksalmon;
+}
+
+
+li a {
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+li a:hover{ background-color: black;}
+
+
+.nav-link {
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 5px;
+    margin-left: auto;
+    transition: ease-in-out 200ms;
+    color: whitesmoke;
+    width: auto;}
+     
+   
+ h1,h2, h3, p{color: whitesmoke;}
+
+ h1{text-align: center;
+text-decoration: underline;}
+
+
+.button
+{text-align: center;
+background-color: none;}
+
+.btn {
+    border: none;
+    background-color: white;
+    padding: 7px;
+    text-transform: capitalize;
+}
+
+button:hover {
+    background-color: darksalmon;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.social-media a {
+    margin-bottom: 23px;
+}
+
+.Newsletter {
+    display: block;
+    width: 50%;
+    margin: auto;
+    background-color: #00000059;
+    padding: 20px;
+    text-align: center;
+    color: whitesmoke;}
+
+.Newsletter form {
+    padding: 15px;
+}
+
+.iframe{text-align: center;
+width: auto;}
+
+.checkbox{
+    margin-top: 15px;
+}
+
+.container {
+    
+    border:0px solid black;
+    display: flex;
+    border-color: cornsilk;
+}
+
+
+.item-1 {
+    flex: 1;
+    background-color: #0000009e;    
+    text-align: center;}
+
+.item-2{flex: 1;
+background-color: rgba(128, 128, 128, 0.664);
+text-align: center}
+
+
+
+     
+.footer {
+    padding: 15px;
+    text-align: center;
+    background-color: #303335;
+    color: rgb(247, 241, 241); }
+
+@media (min-width:790px) {
+    
+}
+
+</style>
+</head>
+
+<body>
+    <header>
+        <nav>  
+            <ul class="naviinhalt">
+                <li class="nav-link"><a href="https:www.google.com">Home</a> </li>
+                <li class="nav-link"><a href="https:www.google.com">Reisen</a> </li>
+                <li class="nav-link"><a href="https:www.google.com">Bewertungen</a> </li>
+                <li class="nav-link"><a href="https:www.google.com">Kontakt</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="erste-section">
+    
+        <h1>Die aufregendsten Seiten für den günstigsten Preis</h1>
+
+        <br> <br> 
+<div class="button"> 
+    <button class="btn">Jetzt Buchen</button> </div>
+
+</div>
+ 
+ <br><br>
+ 
+<div class="links">
+    <div class="social-media">
+        <a href="#"> <img src="facebook.png" alt="facebook icon"> </a>
+        <a href="#"> <img src="instagram.png" alt="instagram icon"> </a>
+    </div>
+    <div class="iframe"> <iframe width="560" height="315" src="https://www.youtube.com/embed/ru8joLfUW1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+</div>
+<br> <br> <br> <br>
+    </section>
+</main>              
+                  <div class="Newsletter">
+                          <p>Abonieren sie unseren Newsletter und sichern sie sich einen Rabatt</p>
+                                <form>
+                                    <label for="Newsletter">Email-Adresse</label>
+                                    <input type="email" placeholder="..@.." style="padding: 6px;">
+                                    <input type="submit" class="btn">
+                                    <br>
+                                   <div class="checkbox"> <input type="checkbox"><span>Hiermit bestätige ich...</span></div>
+                                </form>
+                  </div>
+            
+                  <br><br>
+
+
+                  <article class="container">
+                    <section class="item-1">
+                        <img src="male_img.png" alt="male avatar">
+                        <h2>Karl Heinz</h2>
+                        <p>Karl:,,Immer wieder gerne....</p>
+                    </section>
+
+                    <section class="item-2">
+                        <img src="female_img.png" alt="female avatar">
+                        <h2>Hannelore Schmitz</h2>
+                        <p>Hannelore:,,Es lief alles super ....</p>                       
+                    </section>
+                
+                </article>
+                <br> 
+                  <footer class="footer">
+                    <div>
+                        <span>Copyright &copy; Meine Seite</span>
+                    </div>
+                </footer>
+
+               
+ </body>
+</html>
